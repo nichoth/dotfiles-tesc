@@ -15,9 +15,7 @@ if [ ! -f ~/.git-completion.sh ]; then
 fi
 
 # change terminal colors
-curl https://raw.githubusercontent.com/tomislav/osx-terminal.app-colors-solarized/master/Solarized%20Dark.terminal > solarized.terminal
-open $_
-rm solarized.terminal
+open solarized.terminal
 
 # install sublime to the home directory, add it to the path, download settings
 curl http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203065.dmg > sublime.dmg
