@@ -9,6 +9,16 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done;
 unset file;
 
+# z script
+if [ -f ~/.z.sh ]; then
+  source ~/.z.sh
+fi
+
+# git auto-completion
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion
+fi
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
