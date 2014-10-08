@@ -23,11 +23,17 @@ hdiutil attach sublime.dmg
 cp -r /Volumes/Sublime\ Text/Sublime\ Text.app ~/Applications/Sublime/
 hdiutil detach /Volumes/Sublime\ Text
 rm sublime.dmg
+mkdir ~/bin
 ln -s ~/Applications/Sublime/Contents/SharedSupport/bin/subl ~/bin/
 cp ./sublime/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 
 # make the settings better
-./osx
+if [["$OSTYPE" == "darwin"*]]; then
+	./osx
+fi
+
+# fix git on old linuxes
+git config core.filemode false
 
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
