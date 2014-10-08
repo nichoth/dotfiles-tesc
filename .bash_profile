@@ -16,7 +16,7 @@ fi
 
 # git auto-completion
 if [ -f ~/.git-completion.bash ]; then
-  source ~/.git-completion
+  source ~/.git-completion.bash
 fi
 
 # Case-insensitive globbing (used in pathname expansion)
