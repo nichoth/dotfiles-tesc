@@ -10,7 +10,7 @@ if [ ! -f ~/.z.sh ]; then
 fi
 
 # git auto-completion
-if [ ! -f ~/.git-completion.sh ]; then
+if [ ! -f ~/.git-completion.bash ]; then
   curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > ~/.git-completion.bash
 fi
 
