@@ -14,9 +14,6 @@ if [ ! -f ~/.git-completion.bash ]; then
   curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > ~/.git-completion.bash
 fi
 
-# change terminal colors
-open solarized.terminal
-
 # install sublime to the home directory, add it to the path, download settings
 curl http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203065.dmg > sublime.dmg
 hdiutil attach sublime.dmg
@@ -50,4 +47,8 @@ else
 		doIt;
 	fi;
 fi;
+
+# change terminal colors
+open solarized.terminal
+
 unset doIt;
